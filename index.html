@@ -1,11 +1,23 @@
-<html>
-    <title>Redirect Phone number using Whatsapp API</title>
-    <center>
-        <br><b>
-        <p>
-        Keyin phone number and press Go to open using whatsapp api.
-        </b></br>
-        <form name="myform" action="https://api.whatsapp.com/send?" autocomplete="off">
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Redirect Phone number using Whatsapp API</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <script src="js/scripts.js"></script>
+    <form name="myform" action="https://api.whatsapp.com/send?" autocomplete="off">
         Phone Number: <input type='text' name='phone' />
         <a href="javascript: submitform()">
         <img src="https://raw.githubusercontent.com/budakbelemoih/whatsapp_redirect/master/go-button.png" width="33" height="19" border="0" />
@@ -22,6 +34,6 @@
          document.myform.submit();
         }
         </script>
-    </center>
-</p>
+</body>
 </html>
+
