@@ -1,5 +1,19 @@
 <!DOCTYPE HTML>
 <html>
+	<style>
+::placeholder {
+    color: red;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: red;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: red;
+}
+</style>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-7532012-2"></script>
 <script>
@@ -37,7 +51,7 @@
 		<!-- Signup Form -->
 		  <form name="myform" action="https://api.whatsapp.com/send?" autocomplete="off" target="_blank">
         Phone Number: <input type='text' name='phone'/>
-        <a href="javascript: submitform()"><input type="submit" value="Submit" style="background-color:yellowgreen;color:white;padding:5px;font-size:18px;border:none;padding:8px;"></a>
+        <a href="javascript: submitform()"><input type="submit" value="Submit" style="background-color:yellowgreen;color:white;padding:5px;font-size:18px;border:none;padding:8px;"  placeholder="A red placeholder text.."></a>
         </form>
         <script type="text/javascript">
         function submitform()
